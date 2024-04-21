@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Hardware',
-    Svg: require('@site/static/img/repo2.svg').default,
+    title: 'Coberturas Transparentes',
+    Svg: require('@site/static/img/cobertura.svg').default,
     description: (
-      <>
-        El Departamento de TI es el encargado de inventarizar, actualizar, mantener y administrar la infraestructura tecnológica de Cruise On Land
-      </>
+    <>
+        La App de Medicheck te permitirá consultar las coberturas de la póliza o plan de la Aseguradora de Riesgos de Salud a la que estés afiliado.
+    </>
     ),
   },
   {
-    title: 'Software',
-    Svg: require('@site/static/img/repo3.svg').default,
-    description: (
-      <>
-        Se encarga, asímismo, de dar soporte técnico y gestionar los diferentes programas, productos de software, y licencias que utiliza la empresa.
-      </>
-    ),
-  },
-  {
-    title: 'Proyectos TI',
+    title: 'Búsca Centros Cercanos',
     Svg: require('@site/static/img/repo4.svg').default,
     description: (
       <>
-        A su vez, formula, diseña y gestiona diferentes proyectos para resolver necesidades internas de la empresa en el ámbito tecnológico.
+        De igual manera, a través de nuestra app, odrás ver los establecimientos cercanos que ofrecen el producto o servicio que estás buscando.
+      </>
+    ),
+  },
+  {
+    title: 'Reporta los Incidentes',
+    Svg: require('@site/static/img/repo3.svg').default,
+    description: (
+      <>
+        Ante cualquier discrepancia entre la información en la aplicación y la provista por las prestadoras de salud el usuario puede generar un reporte en la aplicación.    
       </>
     ),
   },

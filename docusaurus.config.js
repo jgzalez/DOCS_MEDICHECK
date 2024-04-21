@@ -64,11 +64,7 @@ const config = {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'COL TI',
-            logo: {
-                alt: 'My Site Logo',
-                src: 'img/repo5.svg',
-            },
+            title: 'Medicheck Docs',
             items: [{
                     type: 'docSidebar',
                     sidebarId: 'tutorialSidebar',
