@@ -1,0 +1,36 @@
+name: Deploy Docusaurus Site to cPanel
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18'  # Specify your Node.js version
+
+      - name: Build Docusaurus Site
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to cPanel via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Specify the local directory to upload, usually the build output directory
+          local-dir: ./build/
+          # Specify the server directory to upload to, often the root or a specific project directory
+          server-dir: /
+

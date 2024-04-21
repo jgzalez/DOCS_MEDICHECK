@@ -1,0 +1,29 @@
+.features {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.featureSvg {
+    width: 150px;
+    /* Adjust to your desired width */
+    height: 150px;
+    /* This keeps the aspect ratio intact */
+    transform: scale(1);
+    /* Example scale, adjust as needed */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* O la altura que prefieras */
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
